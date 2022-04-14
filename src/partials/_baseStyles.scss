@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+    &:hover {
+        color: $gold;
+    }
+}
+
+
+
+/* CSS */
+button {
+    font-weight: 400;
+    font-family: $primary-font;
+    padding: 13px 20px 13px;
+    outline: 0;
+    margin-top:30px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button:after {
+    content: "";
+    background-color: $gold;
+    opacity: 50%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+hr {
+    color:rgba(255, 255, 255, 0.308);
+    width: 60%;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 13px 50px 13px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 80%;
+    margin: 0 auto;
+}

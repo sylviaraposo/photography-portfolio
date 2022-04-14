@@ -1,0 +1,17 @@
+.intro {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:50px;
+        align-items: center;
+
+        .intro-text {
+            width: 45%;
+        }
+
+        .intro-photo {
+            width: 40%;
+        }
+    }
+}

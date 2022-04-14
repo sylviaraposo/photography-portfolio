@@ -1,0 +1,17 @@
+h1, body {
+    font-family: $secondary-font;
+}
+
+h2, h3, a {
+    font-family: $primary-font;
+    font-weight:400;
+}
+
+h1 {
+    font-size: $header-text;
+    font-weight:200;
+}
+
+h2 {
+    font-size: $subheading-text;
+}

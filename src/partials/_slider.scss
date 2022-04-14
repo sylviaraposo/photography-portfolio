@@ -1,0 +1,98 @@
+.slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.slider--content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    button.slider__btn-right, button.slider__btn-left {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #eee;
+        padding: 0 2.4rem;
+        margin:-150px;
+        font-size: 2rem;
+        cursor: pointer;
+        box-shadow: none;
+        transition: transform 0.3s ease-in-out;
+        &:after{
+            content:none;
+        }
+        &:hover{
+            box-shadow: none;
+            color:$gold;
+            transform: scale(1.10);
+            
+        }
+    }
+}
+
+.slider--feature {
+    text-align: center;
+}
+
+.feature--title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.feature--text {
+    color: #fff;
+    margin: 1rem 0;
+}
+
+
+button.feature__btn {
+    color: #eee;
+    position: absolute;
+    font-size: 1.7rem;
+    margin: 0 auto;
+    bottom:22%;
+    outline: none;
+    padding: 0.8rem 2rem;
+    align-self: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    justify-content: space-around;
+    box-shadow: none;
+    transition: all 1s;
+    &::after {
+        content:none;
+    }
+    &:hover {
+        box-shadow: none;
+        transform: translateY(5px);
+        outline: none;
+        background-color: none;
+        color:$gold;
+    }
+}
+
+button.feature__btn:after:hover {
+    background-color: none;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.1s;
+}
