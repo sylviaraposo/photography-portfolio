@@ -17,8 +17,6 @@
         border: none;
         outline: none;
         color: #eee;
-        padding: 0 2.4rem;
-        margin:-150px;
         font-size: 2rem;
         cursor: pointer;
         box-shadow: none;
@@ -26,7 +24,9 @@
         &:after{
             content:none;
         }
-        &:hover{
+        &:hover,
+        &:focus,
+        &:focus-within{
             box-shadow: none;
             color:$gold;
             transform: scale(1.10);
@@ -55,7 +55,7 @@ button.feature__btn {
     position: absolute;
     font-size: 1.7rem;
     margin: 0 auto;
-    bottom:22%;
+    bottom:20%;
     outline: none;
     padding: 0.8rem 2rem;
     align-self: center;
@@ -69,7 +69,9 @@ button.feature__btn {
     &::after {
         content:none;
     }
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-within {
         box-shadow: none;
         transform: translateY(5px);
         outline: none;
@@ -78,7 +80,9 @@ button.feature__btn {
     }
 }
 
-button.feature__btn:after:hover {
+button.feature__btn:after:hover,
+button.feature__btn:after:focus,
+button.feature__btn:after:focus-within {
     background-color: none;
 }
 
@@ -96,3 +100,4 @@ button.feature__btn:after:hover {
 .fadeIn {
     animation: fadeIn 0.1s;
 }
+
