@@ -376,6 +376,12 @@ h1 {
 }
 .intro .wrapper .intro-photo {
   width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+.intro .wrapper .intro-photo img {
+  border-radius: 10px;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -508,6 +514,13 @@ footer {
 }
 footer p {
   margin: 0 auto;
+  font-size: 0.8rem;
   color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.6rem;
+  }
 }
