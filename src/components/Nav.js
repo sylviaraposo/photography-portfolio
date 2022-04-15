@@ -5,10 +5,10 @@ function Nav() {
     return (
         <div className="navBar">
             <nav>
-                <a href="#home"><img className="logo" src="./assets/logo.png" alt="picket-fence photography logo" /></a>
+                <Link to="/"><img className="logo" src="./assets/logo.png" alt="picket-fence photography logo" /></Link>
                 <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">gallery</a></li>
+                    <li><Link to="/">home</Link></li>
+                    <li><Link to="/Gallery">gallery</Link></li>
                     <li><a href="">contact</a></li>
                 </ul>
             </nav>

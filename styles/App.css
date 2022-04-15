@@ -265,6 +265,7 @@ nav ul li {
 }
 html {
   scroll-behavior: smooth;
+  background-color: #FAF9F6;
 }
 
 a {
@@ -308,11 +309,12 @@ button:hover:after {
 }
 
 hr {
-  color: rgba(255, 255, 255, 0.308);
-  width: 60%;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 img {
@@ -507,20 +509,44 @@ button.feature__btn:after:focus-within {
 footer {
   width: 100%;
   display: flex;
-  background-color: #799DAC;
+  background-color: #FAF9F6;
   padding: 30px;
   flex-direction: column;
   text-align: center;
 }
 footer p {
   margin: 0 auto;
+  color: #B2A98B;
   font-size: 0.8rem;
-  color: white;
   font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 768px) {
   footer p {
     font-size: 0.6rem;
+  }
+}
+.gallery {
+  text-align: center;
+}
+.gallery ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+}
+.gallery ul li {
+  width: 20%;
+  margin: 10px;
+  list-style: none;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery ul li {
+    width: 80%;
   }
 }

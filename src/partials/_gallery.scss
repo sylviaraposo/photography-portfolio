@@ -1,0 +1,24 @@
+.gallery {
+    text-align: center;
+    ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        padding:0;
+        justify-content: center;
+        li {
+            width: 20%;margin: 10px;
+            list-style: none;
+            padding:10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery ul li {
+                width: 80%;
+            
+    }
+}

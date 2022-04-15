@@ -1,14 +1,14 @@
 footer {
     width: 100%;
     display: flex;
-    background-color: $soft-blue;
+    background-color: $cream;
     padding:30px;
     flex-direction: column;
     text-align: center;
     p {
         margin: 0 auto;
+        color: $gold;
         font-size: .8rem;
-        color:white;
         font-family: $primary-font;
     }
 }

@@ -13,15 +13,17 @@ function App() {
     <div className="App">
       
       <Nav />
-      <Header />
-      <Intro />
-      <Footer /> 
+      {/* <Header /> */}
+      {/* <Intro /> */}
 
       <main>
       <Routes>
+        <Route path="/" element={<><Header /><Intro /></>} />
         <Route path="/Gallery" element={<Gallery />} />
       </Routes>
       </main>
+
+      <Footer /> 
     </div>
   );
 }
