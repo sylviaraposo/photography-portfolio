@@ -2,7 +2,7 @@ function Gallery() {
 
     // console.log(photos);
     let photoArray = []
-    for (let i = 7; i <= 32; i++) {
+    for (let i = 7; i <= 34; i++) {
         photoArray.push(`../assets/${i}.jpg`)
     }
 
