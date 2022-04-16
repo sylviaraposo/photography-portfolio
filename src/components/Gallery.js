@@ -7,23 +7,25 @@ function Gallery() {
     }
 
     return (
-        <div className="gallery">
-            <h1>Gallery</h1>
-            <ul>
-                        {
-                        photoArray.map( (photo) => {
-                            return (
-                            <li>
-                                <img src={photo} alt="a phootooo" />
-                            </li>
-                            )
-                        }
+        <div className="wrapper">
+            <div className="gallery">
+                <h1>Gallery</h1>
+                <ul>
+                            {
+                            photoArray.map( (photo) => {
+                                return (
+                                <li>
+                                    <img src={photo} alt="a phootooo" />
+                                </li>
+                                )
+                            }
+                            
                         
+                            )
+                        } 
                     
-                        )
-                    } 
-                
-            </ul>
+                </ul>
+            </div>
         </div>
     )
 }

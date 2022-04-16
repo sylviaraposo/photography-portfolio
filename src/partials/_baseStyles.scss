@@ -40,7 +40,9 @@ button:after {
     z-index: -1;
 }
 
-button:hover:after{
+button:hover:after,
+button:focus:after,
+button:focus-within:after{
     top: 0px;
     left: 0px;
 }

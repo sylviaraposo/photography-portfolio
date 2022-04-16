@@ -303,7 +303,9 @@ button:after {
   z-index: -1;
 }
 
-button:hover:after {
+button:hover:after,
+button:focus:after,
+button:focus-within:after {
   top: 0px;
   left: 0px;
 }
@@ -402,6 +404,51 @@ h1 {
     margin-top: 10px;
   }
 }
+.contact {
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+.contact form input {
+  border-radius: 6px;
+  padding: 12px;
+  width: 80%;
+  box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
+  border: none;
+  margin: 10px 0;
+  transition: all 200ms ease-in-out;
+  outline: none;
+}
+.contact form input:active, .contact form input:focus {
+  outline: 2px solid #B2A98B;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 12px 7px -5px;
+}
+.contact form textarea {
+  box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 80%;
+  padding: 10px;
+  resize: none;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+.contact form textarea:active, .contact form textarea:focus {
+  transform: translate3d(0, -2px, 0);
+  outline: 2px solid #B2A98B;
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 12px 9px -5px;
+}
+.contact form button {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+}
+
 .slider {
   background-position: center;
   background-repeat: no-repeat;

@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
       <main>
       <Routes>
         <Route path="/" element={<><Header /><Intro /></>} />
-        <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Contact" element={<Contact />} />
       </Routes>
       </main>
 
