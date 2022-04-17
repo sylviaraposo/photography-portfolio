@@ -266,6 +266,7 @@ nav ul li {
 html {
   scroll-behavior: smooth;
   background-color: #FAF9F6;
+  overflow-x: hidden;
 }
 
 a {
