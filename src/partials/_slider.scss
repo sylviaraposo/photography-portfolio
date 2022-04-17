@@ -50,41 +50,41 @@
 }
 
 
-button.feature__btn {
-    color: #eee;
-    position: absolute;
-    font-size: 1.7rem;
-    margin: 0 auto;
-    bottom:20%;
-    outline: none;
-    padding: 0.8rem 2rem;
-    align-self: center;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    justify-content: space-around;
-    box-shadow: none;
-    transition: all 1s;
-    &::after {
-        content:none;
-    }
-    &:hover,
-    &:focus,
-    &:focus-within {
-        box-shadow: none;
-        transform: translateY(5px);
-        outline: none;
-        background-color: none;
-        color:$gold;
-    }
-}
+// button.feature__btn {
+//     color: #eee;
+//     position: absolute;
+//     font-size: 1.7rem;
+//     margin: 0 auto;
+//     bottom:20%;
+//     outline: none;
+//     padding: 0.8rem 2rem;
+//     align-self: center;
+//     background: transparent;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     justify-content: space-around;
+//     box-shadow: none;
+//     transition: all 1s;
+//     &::after {
+//         content:none;
+//     }
+//     &:hover,
+//     &:focus,
+//     &:focus-within {
+//         box-shadow: none;
+//         transform: translateY(5px);
+//         outline: none;
+//         background-color: none;
+//         color:$gold;
+//     }
+// }
 
-button.feature__btn:after:hover,
-button.feature__btn:after:focus,
-button.feature__btn:after:focus-within {
-    background-color: none;
-}
+// button.feature__btn:after:hover,
+// button.feature__btn:after:focus,
+// button.feature__btn:after:hover {
+//     background-color: none;
+// }
 
 
 @keyframes fadeIn {

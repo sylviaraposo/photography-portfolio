@@ -521,40 +521,6 @@ p.form-submitted {
   margin: 1rem 0;
 }
 
-button.feature__btn {
-  color: #eee;
-  position: absolute;
-  font-size: 1.7rem;
-  margin: 0 auto;
-  bottom: 20%;
-  outline: none;
-  padding: 0.8rem 2rem;
-  align-self: center;
-  background: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  justify-content: space-around;
-  box-shadow: none;
-  transition: all 1s;
-}
-button.feature__btn::after {
-  content: none;
-}
-button.feature__btn:hover, button.feature__btn:focus, button.feature__btn:focus-within {
-  box-shadow: none;
-  transform: translateY(5px);
-  outline: none;
-  background-color: none;
-  color: #B2A98B;
-}
-
-button.feature__btn:after:hover,
-button.feature__btn:after:focus,
-button.feature__btn:after:focus-within {
-  background-color: none;
-}
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -604,25 +570,61 @@ footer p {
   color: white;
   font-size: 4rem;
 }
-.gallery ul {
+.gallery ul.images {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  justify-content: center;
+  justify-content: space-around;
 }
-.gallery ul li {
-  width: 20%;
-  margin: 10px;
+.gallery ul.images li {
+  width: 25%;
   list-style: none;
-  padding: 10px;
+  padding: 30px;
+  position: relative;
+}
+.gallery ul.images li .fullscreen-image {
+  margin: 0 auto;
+  top: 0;
+  margin-top: 100px;
+  position: fixed;
+  z-index: 100;
+  left: 35%;
+  max-height: 80vh;
+  height: 80vh;
+}
+.gallery ul.images li .background-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+.gallery ul.images li .exit {
+  font-size: 5rem;
+  color: #FAF9F6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+.gallery ul.images li .exit:hover, .gallery ul.images li .exit:focus, .gallery ul.images li .exit:focus-within {
+  font-weight: 600;
+  cursor: pointer;
+}
+.gallery ul.images li img {
+  width: 100%;
+  height: 100%;
 }
 .gallery .gallery-header {
   background-image: url("../images/gallery-image.jpg");
   height: 35vh;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

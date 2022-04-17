@@ -26,7 +26,6 @@ const Slider = ({ images }) => {
                     <i className="fas fa-angle-right"></i>
                 </button>
 
-                <Link to="#intro"><button className="feature__btn"><i className="fa-solid fa-arrow-down-long"></i></button></Link>
             </div>
         </div>
     )

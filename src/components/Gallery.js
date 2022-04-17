@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom"
+import ModalImage from "./ModalImage"
+
+import { lazy, Suspense } from 'react';
+
+
 function Gallery() {
 
     // console.log(photos);
@@ -14,20 +19,20 @@ function Gallery() {
             </div>
 
             <div className="wrapper">
-                <ul>
-                            {
+                <ul className="images">
+
+                        {
                             photoArray.map( (photo) => {
                                 return (
-                                <li>
-                                    <img src={photo} alt="a phootooo" />
+                                <li className="individual-photo">
+
+                                    
+                                        <ModalImage src={photo} alt="a phootooo" />
+                                    
                                 </li>
                                 )
-                            }
-                            
-                        
-                            )
+                            })
                         } 
-                    
                 </ul>
             </div>
 
