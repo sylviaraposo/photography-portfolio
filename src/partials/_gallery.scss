@@ -1,5 +1,9 @@
 .gallery {
     text-align: center;
+    h1 {
+        color:white;
+        font-size: 4rem;
+    }
     ul {
         display: flex;
         width: 100%;
@@ -13,6 +17,17 @@
             list-style: none;
             padding:10px;
         }
+    }
+    .gallery-header {
+        background-image: url('../images/gallery-image.jpg');
+        height:35vh;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
     }
 }
 

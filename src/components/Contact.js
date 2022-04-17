@@ -1,29 +1,63 @@
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 function Contact() {
+    const [state, handleSubmit] = useForm("mnqwgokq");
+    if (state.succeeded) {
+        return <p className='form-submitted'>Form Submitted, Thank you! I'll be in touch soon.</p>;
+    }
     return (
 
         <div className="contact">
+            <div className="contact-header">
+                <h1>let's chat</h1>
+            </div>
             <div className="wrapper">
-                <h1>Contact</h1>
-                <form action="https://formspree.io/f/mvolrdpg"
-                    method="POST"
-                    className="contact-form">
-
-                    <label for="name" className="sr-only">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name" />
-
-                    <label for="email" className="sr-only">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="Email Address" />
-                    
-
-                    <label for="message" className="sr-only">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-
-                    <button>send message</button>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="email">
+                        Email Address *
+                    </label>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                    />
+                    <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
+                    />
+                    <label htmlFor="name">
+                        Name *
+                    </label>
+                    <input
+                        id="name"
+                        type="name"
+                        name="name"
+                    />
+                    <ValidationError
+                        prefix="name"
+                        field="name"
+                        errors={state.errors}
+                    />
+                    <label htmlFor="message">
+                        Message *
+                    </label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows={5}
+                    />
+                    <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                    />
+                    <button type="submit" disabled={state.submitting}>
+                        Submit
+                    </button>
                 </form>
             </div>
         </div>
-    )
-
+    );
 }
-
 export default Contact;

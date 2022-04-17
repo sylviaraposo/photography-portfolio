@@ -405,7 +405,23 @@ h1 {
   }
 }
 .contact {
+  font-family: "Montserrat", sans-serif;
+}
+.contact h1 {
+  font-size: 4.5rem;
   text-align: center;
+  color: white;
+}
+.contact .contact-header {
+  background-image: url("../images/contact-image.jpg");
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .contact form {
   display: flex;
@@ -415,11 +431,11 @@ h1 {
 }
 .contact form input {
   border-radius: 6px;
-  padding: 12px;
-  width: 80%;
+  padding: 15px;
+  width: 70%;
   box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
   border: none;
-  margin: 10px 0;
+  margin: 15px 0;
   transition: all 200ms ease-in-out;
   outline: none;
 }
@@ -431,8 +447,8 @@ h1 {
 .contact form textarea {
   box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
   border-radius: 6px;
-  margin-top: 10px;
-  width: 80%;
+  margin-top: 15px;
+  width: 70%;
   padding: 10px;
   resize: none;
   border: none;
@@ -447,6 +463,14 @@ h1 {
   margin: 0 auto;
   margin-top: 50px;
   display: block;
+}
+
+p.form-submitted {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #B2A98B;
 }
 
 .slider {
@@ -576,6 +600,10 @@ footer p {
 .gallery {
   text-align: center;
 }
+.gallery h1 {
+  color: white;
+  font-size: 4rem;
+}
 .gallery ul {
   display: flex;
   width: 100%;
@@ -590,6 +618,17 @@ footer p {
   margin: 10px;
   list-style: none;
   padding: 10px;
+}
+.gallery .gallery-header {
+  background-image: url("../images/gallery-image.jpg");
+  height: 35vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {

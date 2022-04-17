@@ -1,6 +1,23 @@
 
 .contact {
-    text-align: center;
+    // text-align: center;
+    font-family: $primary-font;
+        h1 {
+            font-size: 4.5rem;
+            text-align: center;
+            color: white;
+        }
+        .contact-header {
+            background-image: url('../images/contact-image.jpg');
+            height:35vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
         form {
             display: flex;
             flex-wrap: wrap;
@@ -9,11 +26,11 @@
 
         input {
             border-radius: 6px;
-            padding: 12px;
-            width: 80%;
+            padding: 15px;
+            width: 70%;
             box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
             border: none;
-            margin: 10px 0;
+            margin: 15px 0;
             transition: all 200ms ease-in-out;
             outline: none;
 
@@ -28,8 +45,8 @@
         textarea {
             box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
             border-radius: 6px;
-            margin-top: 10px;
-            width: 80%;
+            margin-top: 15px;
+            width: 70%;
             padding: 10px;
             resize: none;
             border: none;
@@ -48,6 +65,13 @@
             margin-top: 50px;
             display: block;
         }
+        
     }
-
+}
+p.form-submitted {
+    text-align: center;
+    margin: 0 auto;
+    font-family: $primary-font;
+    font-size: 2rem;
+    color:$gold;
 }

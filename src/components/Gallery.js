@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function Gallery() {
 
     // console.log(photos);
@@ -7,9 +8,12 @@ function Gallery() {
     }
 
     return (
-        <div className="wrapper">
-            <div className="gallery">
+        <div className="gallery">
+            <div className="gallery-header">
                 <h1>Gallery</h1>
+            </div>
+
+            <div className="wrapper">
                 <ul>
                             {
                             photoArray.map( (photo) => {
@@ -26,6 +30,8 @@ function Gallery() {
                     
                 </ul>
             </div>
+
+            <Link to="/Contact"><button>book now!</button></Link>
         </div>
     )
 }
