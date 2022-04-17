@@ -473,6 +473,14 @@ p.form-submitted {
   color: #B2A98B;
 }
 
+@media (max-width: 820px) {
+  .contact form input {
+    width: 90%;
+  }
+  .contact form textarea {
+    width: 90%;
+  }
+}
 .slider {
   background-position: center;
   background-repeat: no-repeat;

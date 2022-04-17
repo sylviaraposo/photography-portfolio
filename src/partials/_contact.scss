@@ -75,3 +75,30 @@ p.form-submitted {
     font-size: 2rem;
     color:$gold;
 }
+
+
+@media (max-width: 820px) {
+    .contact {
+        // text-align: center;
+      
+    
+        form {
+            input {
+               
+                width: 90%;
+               
+            }
+    
+            textarea {
+                
+                width: 90%;
+                
+    
+                
+            }
+    
+           
+    
+        }
+    }
+}
