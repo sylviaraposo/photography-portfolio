@@ -231,8 +231,8 @@ html {
 }
 
 .navBar {
-  position: -webkit-sticky;
   position: sticky;
+  -webkit-position: -webkit-sticky;
   top: 0;
   background-color: #FAF9F6;
   z-index: 40;
