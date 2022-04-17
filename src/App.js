@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<><Header /><Intro /></>} />
           <Route path="/Gallery" element={
-            <Suspense fallback={<div>LOADDDDIIIINNGGGGGGG</div>}><Gallery /></Suspense>} />
+            <Suspense fallback={<div>Still Loading...</div>}><Gallery /></Suspense>} />
           <Route path="/Contact" element={<Contact />} />
       </Routes>
       </main>
